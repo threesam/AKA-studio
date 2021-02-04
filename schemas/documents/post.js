@@ -105,17 +105,10 @@ export default {
   preview: {
     select: {
       title: 'title',
-      publishedAt: 'publishedAt',
-      slug: 'slug',
-      media: 'mainImage'
     },
-    prepare ({title = 'No title', publishedAt, slug, media}) {
-      const dateSegment = format(publishedAt, 'YYYY/MM/DD')
-      const path = `/${dateSegment}/${slug.current}/`
+    prepare({ title = 'No title' }) {
       return {
-        title,
-        media,
-        subtitle: publishedAt ? path : 'Missing publishing date'
+        title
       }
     }
   }

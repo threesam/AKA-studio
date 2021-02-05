@@ -20,8 +20,9 @@ export default {
     },
     {
       name: 'image',
-      type: 'mainImage',
-      title: 'Image'
+      type: 'image',
+      title: 'Image',
+      options: { hotspot: true }
     },
     {
       name: 'bio',

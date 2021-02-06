@@ -49,7 +49,13 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'authorReference'
+          name: 'author',
+          type: 'reference',
+          to: [
+            {
+              type: 'author'
+            }
+          ]
         }
       ]
     },

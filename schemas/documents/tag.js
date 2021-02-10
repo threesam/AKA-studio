@@ -18,5 +18,17 @@ export default {
       type: 'text',
       title: 'Description'
     }
+  ],
+  orderings: [
+    {
+      name: 'titleAsc',
+      title: 'Alphabetized',
+      by: [
+        {
+          field: 'title',
+          direction: 'desc'
+        }
+      ]
+    }
   ]
 }

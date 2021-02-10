@@ -23,13 +23,15 @@
     "@sanity/desk-tool": "^2.3.3",
     "@sanity/vision": "^2.2.6",
     "babel": "^6.23.0",
-    "date-fns": "^2.16.1",
+    "date-fns": "^2.17.0",
     "dotenv": "^8.2.0",
     "ent": "^2.2.0",
+    "get-youtube-id": "^1.0.1",
     "node-fetch": "^2.6.1",
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
+    "react-youtube": "^7.13.1",
     "sanity-plugin-asset-source-cloudinary": "^0.1.0"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 export default {
-  name: 'mainImage',
+  name: 'featuredImage',
   type: 'image',
   title: 'Image',
   options: {

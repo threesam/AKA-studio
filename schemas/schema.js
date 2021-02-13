@@ -9,13 +9,16 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import tag from './documents/tag'
+import song from './documents/song'
+import collection from './documents/collection'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
 import excerptPortableText from './objects/excerptPortableText'
-import mainImage from './objects/mainImage'
+import featuredImage from './objects/featuredImage'
 import authorReference from './objects/authorReference'
 import videoUrl from './objects/videoUrl'
+import coverImage from './objects/coverImage'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,10 +32,13 @@ export default createSchema({
     category,
     post,
     tag,
+    collection,
+    song,
     bodyPortableText,
     excerptPortableText,
-    mainImage,
+    featuredImage,
     authorReference,
-    videoUrl
+    videoUrl,
+    coverImage
   ]),
 })

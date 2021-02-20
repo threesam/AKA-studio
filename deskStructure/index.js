@@ -1,0 +1,47 @@
+import S from '@sanity/desk-tool/structure-builder'
+
+import categories from './categories'
+import authors from './authors'
+import posts from './posts'
+import press from './press'
+import collections from './collections'
+import songs from './songs'
+import tags from './tags'
+import siteSettings from './siteSettings'
+
+import JSONpreview from '../components/previews/json/JSONpreview'
+
+// Hide document types that we already have a structure definition for
+const hiddenDocTypes = listItem =>
+  !['category', 'siteSettings', 'press', 'author', 'post', 'collection', 'song', 'tag'].includes(listItem.getId())
+
+export default () =>
+  S.list()
+    .title('Content')
+    .items([
+      siteSettings,
+      posts,
+      authors,
+      press,
+      collections,
+      songs,
+      categories,
+      tags,
+      ...S.documentTypeListItems().filter(hiddenDocTypes)
+    ])
+
+export const getDefaultDocumentNode = (props) => {
+  /**
+   * Here you can define fallback views for document types without
+   * a structure definition for the document node. If you want different
+   * fallbacks for different types, or document values (e.g. if there is a slug present)
+   * you can set up that logic in here too.
+   * https://www.sanity.io/docs/structure-builder-reference#getdefaultdocumentnode-97e44ce262c9
+   */
+  // const {schemaType} = props
+  return S.document()
+    .views([
+      S.view.form(),
+      S.view.component(JSONpreview).title('JSON')
+    ])
+}

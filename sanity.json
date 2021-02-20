@@ -13,12 +13,24 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "asset-source-cloudinary"
+    "asset-source-cloudinary",
+    "asset-source-unsplash",
+    "parts-list",
+    "@andre-brdoch/sanity-plugin-schema-inspector",
+    "dashboard-widget-document-list",
+    "@sanity/dashboard",
+    "dashboard-widget-netlify",
+    "media",
+    "graph-view",
+    "dashboard-widget-analytics"
   ],
   "env": {
     "development": {
       "plugins": [
-        "@sanity/vision"
+        "@sanity/vision",
+        "parts-list",
+        "graph-view",
+        "@andre-brdoch/sanity-plugin-schema-inspector"
       ]
     }
   },
@@ -26,6 +38,22 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./styles/variables.css"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure/index.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "src/dashboardConfig.js"
     }
   ]
 }

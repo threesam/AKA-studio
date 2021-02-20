@@ -11,6 +11,8 @@ import post from './documents/post'
 import tag from './documents/tag'
 import song from './documents/song'
 import collection from './documents/collection'
+import press from './documents/press'
+import siteSettings from './documents/siteSettings'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -34,6 +36,8 @@ export default createSchema({
     tag,
     collection,
     song,
+    press,
+    siteSettings,
     bodyPortableText,
     excerptPortableText,
     featuredImage,

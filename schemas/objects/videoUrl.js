@@ -1,12 +1,21 @@
-// youtube.js
 import React from 'react'
-import getYouTubeId from 'get-youtube-id'
+import getVideoId from 'get-video-id'
 import YouTube from 'react-youtube'
+import Vimeo from 'react-vimeo'
+import capitalize from 'capitalize'
 
 const Preview = ({ value }) => {
   const { url } = value
-  const id = getYouTubeId(url)
-  return (<YouTube videoId={id} />)
+  const { id, service } = getVideoId(`${url}`)
+  console.log('id', id)
+  console.log('service', service)
+  if (service === 'youtube') {
+    return (<YouTube videoId={id} />)
+  } else if (service === 'vimeo') {
+    return (<Vimeo videoId={id} />)
+  } else {
+    return null
+  }
 }
 
 export default {
@@ -17,7 +26,7 @@ export default {
     {
       name: 'url',
       type: 'url',
-      title: 'Video URL'
+      title: `Video Url`
     }
   ],
   preview: {

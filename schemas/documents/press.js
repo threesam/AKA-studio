@@ -1,7 +1,7 @@
 export default {
-  name: 'category',
+  name: 'press',
   type: 'document',
-  title: 'Category',
+  title: 'Press',
   fields: [
     {
       name: 'title',
@@ -21,6 +21,12 @@ export default {
       name: 'description',
       type: 'text',
       title: 'Description'
-    }
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'array',
+      of: [{ type: 'videoUrl' }]
+    },
   ]
 }

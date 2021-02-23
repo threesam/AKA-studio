@@ -29,6 +29,16 @@ export default {
           direction: 'desc'
         }
       ]
+    },
+    {
+      name: 'titleDesc',
+      title: 'Alphabetized',
+      by: [
+        {
+          field: 'title',
+          direction: 'asc'
+        }
+      ]
     }
   ]
 }

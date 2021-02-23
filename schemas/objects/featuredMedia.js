@@ -1,7 +1,7 @@
 export default {
-  name: 'featuredImage',
+  name: 'featuredMedia',
   type: 'image',
-  title: 'Image',
+  title: ' Featured Media',
   options: {
     hotspot: true
   },

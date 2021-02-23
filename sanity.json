@@ -15,13 +15,10 @@
     "@sanity/desk-tool",
     "asset-source-cloudinary",
     "asset-source-unsplash",
-    "parts-list",
-    "@andre-brdoch/sanity-plugin-schema-inspector",
     "dashboard-widget-document-list",
     "@sanity/dashboard",
     "dashboard-widget-netlify",
     "media",
-    "graph-view",
     "dashboard-widget-analytics"
   ],
   "env": {

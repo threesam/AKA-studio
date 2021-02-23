@@ -10,7 +10,7 @@ export default {
     },
     {
       type: 'array',
-      name: 'items',
+      name: 'documents',
       of: [
         {
           name: 'postRef',
@@ -23,6 +23,12 @@ export default {
           type: 'reference',
           title: 'Songs',
           to: [{ type: 'song' }]
+        },
+        {
+          name: 'pressRef',
+          type: 'reference',
+          title: 'Press',
+          to: [{ type: 'press' }]
         }
       ]
     },

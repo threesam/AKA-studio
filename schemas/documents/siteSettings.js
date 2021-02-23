@@ -11,7 +11,7 @@ export default {
     },
     {
       name: 'image',
-      type: 'featuredImage',
+      type: 'featuredMedia',
       title: 'Site Image',
       description: 'main branding'
     },
@@ -19,7 +19,7 @@ export default {
       name: 'description',
       type: 'text',
       title: 'Description',
-      description: 'Describe your blog for search engines and social media.'
+      description: 'Describe ArtKillingApathy for search engines and social media.'
     },
     {
       name: 'author',

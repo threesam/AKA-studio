@@ -26,7 +26,7 @@ export default {
       name: 'link',
       title: 'Link',
       type: 'array',
-      of: [{ type: 'videoUrl' }]
+      of: [{ type: 'videoUrl' }, { type: 'url' }]
     },
   ]
 }

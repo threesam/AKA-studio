@@ -17,7 +17,7 @@ import siteSettings from './documents/siteSettings'
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
 import excerptPortableText from './objects/excerptPortableText'
-import featuredImage from './objects/featuredImage'
+import featuredMedia from './objects/featuredMedia'
 import authorReference from './objects/authorReference'
 import videoUrl from './objects/videoUrl'
 import coverImage from './objects/coverImage'
@@ -40,7 +40,7 @@ export default createSchema({
     siteSettings,
     bodyPortableText,
     excerptPortableText,
-    featuredImage,
+    featuredMedia,
     authorReference,
     videoUrl,
     coverImage

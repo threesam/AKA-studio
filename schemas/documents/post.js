@@ -1,4 +1,4 @@
-const { format } = require('date-fns')
+import { format, parseISO } from 'date-fns'
 
 export default {
   name: 'post',
@@ -31,39 +31,9 @@ export default {
         timeFormat: 'HH:mm',
       }
     },
-    {
-      name: 'featuredMedia',
-      type: 'image',
-      title: 'Featured Media',
-      options: {
-        hotspot: true
-      },
-      fields: [
-        {
-          name: 'caption',
-          type: 'string',
-          title: 'Caption',
-          options: {
-            isHighlighted: true
-          }
-        },
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative text',
-          description: 'Important for SEO and accessiblity.',
-          validation: Rule => Rule.error('You have to fill out the alternative text.').required(),
-          options: {
-            isHighlighted: true
-          }
-        }
-      ],
-      preview: {
-        select: {
-          imageUrl: 'asset.url',
-          title: 'caption'
-        }
-      }
+{
+  name: 'featuredMedia',
+  type: 'featuredMedia'
     },
     {
       name: 'excerpt',
@@ -159,13 +129,14 @@ export default {
     select: {
       title: 'title',
       publishedAt: 'publishedAt',
+      slug: 'slug',
       media: 'featuredMedia'
     },
-    prepare({ title = 'No title', media, publishedAt }) {
+    prepare({ title = 'No title', publishedAt, media }) {
       return {
         title,
-        subtitle: publishedAt,
-        media
+        media,
+        subtitle: publishedAt
       }
     }
   }

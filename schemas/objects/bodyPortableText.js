@@ -46,6 +46,12 @@ export default {
     // as a block type.
     {
       type: 'image',
+      hidden: true,
+      options: { hotspot: true }
+    },
+    {
+      type: 'featuredMedia',
+      title: 'Image',
       options: {hotspot: true}
     },
     {

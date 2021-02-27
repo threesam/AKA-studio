@@ -13,7 +13,7 @@ import JSONpreview from '../components/previews/json/JSONpreview'
 
 // Hide document types that we already have a structure definition for
 const hiddenDocTypes = listItem =>
-  !['category', 'siteSettings', 'press', 'author', 'post', 'collection', 'song', 'tag'].includes(listItem.getId())
+  !['category', 'siteSettings', 'press', 'author', 'post', 'collection', 'song', 'tag', 'media.tag'].includes(listItem.getId())
 
 export default () =>
   S.list()

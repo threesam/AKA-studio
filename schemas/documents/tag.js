@@ -21,21 +21,21 @@ export default {
   ],
   orderings: [
     {
-      name: 'titleAsc',
+      name: 'nameAsc',
       title: 'Alphabetized',
       by: [
         {
-          field: 'title',
+          field: 'name',
           direction: 'desc'
         }
       ]
     },
     {
-      name: 'titleDesc',
+      name: 'nameDesc',
       title: 'Alphabetized',
       by: [
         {
-          field: 'title',
+          field: 'name',
           direction: 'asc'
         }
       ]

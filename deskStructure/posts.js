@@ -24,7 +24,7 @@ export default S.listItem()
   .icon(MdStar)
   .child(
     S.documentTypeList('post')
-      .title('Projects')
+      .title('Posts')
       .child(documentId =>
         S.document()
           .documentId(documentId)

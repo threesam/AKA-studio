@@ -24,6 +24,12 @@ export default {
       title: 'Cover'
     },
     {
+      name: 'collection',
+      type: 'reference',
+      title: 'Collection',
+      to: [{ type: 'collection' }]
+    },
+    {
       name: 'lyrics',
       type: 'text',
       title: 'Lyrics'
@@ -35,10 +41,6 @@ export default {
       of: [
         {
           type: 'string',
-        },
-        {
-          type: 'reference',
-          to: [{ type: 'author' }]
         }
       ]
     },

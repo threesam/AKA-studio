@@ -97,8 +97,8 @@ export default {
   ],
   orderings: [
     {
-      name: 'publishingDateAsc',
-      title: 'Publishing date new–>old',
+      name: 'publishedAsc',
+      title: 'Published new–>old',
       by: [
         {
           field: 'publishedAt',
@@ -111,8 +111,8 @@ export default {
       ]
     },
     {
-      name: 'publishingDateDesc',
-      title: 'Publishing date old->new',
+      name: 'publishedDesc',
+      title: 'Published old->new',
       by: [
         {
           field: 'publishedAt',
@@ -137,7 +137,7 @@ export default {
       return {
         title,
         media,
-        subtitle: publishedAt ? date : 'no published date'
+        subtitle: publishedAt ? date : 'no publishing date'
       }
     }
   }

@@ -133,7 +133,7 @@ export default {
       media: 'featuredMedia'
     },
     prepare({ title = 'No title', publishedAt, media }) {
-      const date = format(parseISO(publishedAt), 'yyyy/mm/dd')
+      const date = format(parseISO(publishedAt), 'yyyy/MM/dd')
       return {
         title,
         media,

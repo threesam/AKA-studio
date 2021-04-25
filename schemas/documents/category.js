@@ -21,6 +21,12 @@ export default {
       name: 'description',
       type: 'text',
       title: 'Description'
-    }
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ]
 }

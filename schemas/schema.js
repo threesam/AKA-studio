@@ -21,6 +21,7 @@ import featuredMedia from './objects/featuredMedia'
 import authorReference from './objects/authorReference'
 import videoUrl from './objects/videoUrl'
 import coverImage from './objects/coverImage'
+import wordCloud from './objects/wordCloud'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -43,6 +44,7 @@ export default createSchema({
     featuredMedia,
     authorReference,
     videoUrl,
-    coverImage
+    coverImage,
+    wordCloud
   ]),
 })

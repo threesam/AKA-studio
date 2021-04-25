@@ -19,7 +19,8 @@
     "@sanity/dashboard",
     "dashboard-widget-netlify",
     "media",
-    "dashboard-widget-analytics"
+    "dashboard-widget-analytics",
+    "order-documents"
   ],
   "env": {
     "development": {

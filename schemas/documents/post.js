@@ -85,6 +85,11 @@ export default {
       ]
     },
     {
+      name: 'cta',
+      type: 'cta',
+      title: 'Call To Action'
+    },
+    {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body'

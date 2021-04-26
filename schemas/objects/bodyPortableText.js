@@ -56,6 +56,10 @@ export default {
     },
     {
       type: 'videoUrl'
+    },
+    {
+      type: 'cta',
+      title: 'Call To Action'
     }
   ]
 }

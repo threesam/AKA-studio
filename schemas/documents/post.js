@@ -3,7 +3,7 @@ import { format, parseISO } from 'date-fns'
 export default {
   name: 'post',
   type: 'document',
-  title: 'Post',
+  title: 'Content',
   fields: [
     {
       name: 'title',

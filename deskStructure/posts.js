@@ -19,12 +19,12 @@ const localURL = 'http://localhost:8000'
 const previewURL = window.location.hostname === 'localhost' ? localURL : remoteURL
 
 export default S.listItem()
-  .title('Posts')
+  .title('Content')
   .schemaType('post')
   .icon(MdStar)
   .child(
     S.documentTypeList('post')
-      .title('Posts')
+      .title('Content')
       .child(documentId =>
         S.document()
           .documentId(documentId)

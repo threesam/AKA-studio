@@ -3,6 +3,7 @@ import S from '@sanity/desk-tool/structure-builder'
 import categories from './categories'
 import authors from './authors'
 import posts from './posts'
+import pages from './pages'
 import press from './press'
 import collections from './collections'
 import songs from './songs'
@@ -13,7 +14,7 @@ import JSONpreview from '../components/previews/json/JSONpreview'
 
 // Hide document types that we already have a structure definition for
 const hiddenDocTypes = listItem =>
-  !['category', 'siteSettings', 'press', 'author', 'post', 'collection', 'song', 'tag', 'media.tag'].includes(listItem.getId())
+  !['category', 'siteSettings', 'press', 'author', 'post', 'collection', 'song', 'tag', 'media.tag', 'page'].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -23,8 +24,9 @@ export default () =>
       posts,
       authors,
       press,
-      collections,
-      songs,
+      pages,
+      // collections,
+      // songs,
       categories,
       tags,
       ...S.documentTypeListItems().filter(hiddenDocTypes)

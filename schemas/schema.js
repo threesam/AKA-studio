@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
+import page from './documents/page'
 import tag from './documents/tag'
 import song from './documents/song'
 import collection from './documents/collection'
@@ -35,6 +36,7 @@ export default createSchema({
     author,
     category,
     post,
+    page,
     tag,
     collection,
     song,

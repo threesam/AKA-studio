@@ -22,6 +22,12 @@ export default {
       description: 'Describe ArtKillingApathy for search engines and social media.'
     },
     {
+      name: 'excerpt',
+      type: 'excerptPortableText',
+      title: 'Excerpt',
+      description: 'About ArtKillingApathy.'
+    },
+    {
       name: 'author',
       type: 'reference',
       description: 'Publish an author and set a reference to them here.',

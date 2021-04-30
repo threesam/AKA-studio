@@ -20,6 +20,24 @@ export default {
       type: 'boolean',
       title: 'External?',
       initialValue: 'false'
+    },
+    {
+      name: 'title',
+      type: 'string',
+      title: 'Title',
+      description: 'For analytics purposes',
+      validation: Rule => Rule.error('Must include title for analytics to be accurate.')
+    },
+    {
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      description: 'For analytics purposes',
+      validation: Rule => Rule.error('Must generate slug for analytics to be accurate.'),
+      options: {
+        source: 'title',
+        maxLength: 96
+      }
     }
   ]
 }

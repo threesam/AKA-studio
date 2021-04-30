@@ -26,14 +26,14 @@ export default {
       type: 'string',
       title: 'Title',
       description: 'For analytics purposes',
-      validation: Rule => Rule.error('Must include title for analytics to be accurate.')
+      validation: Rule => Rule.error('Must include title for analytics to be accurate.').required()
     },
     {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
       description: 'For analytics purposes',
-      validation: Rule => Rule.error('Must generate slug for analytics to be accurate.'),
+      validation: Rule => Rule.error('Must generate slug for analytics to be accurate.').required(),
       options: {
         source: 'title',
         maxLength: 96

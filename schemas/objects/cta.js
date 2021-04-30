@@ -14,6 +14,12 @@ export default {
       type: 'url',
       title: 'Link',
       validation: Rule => Rule.error('You have to include a link.').required(),
+    },
+    {
+      name: 'external',
+      type: 'boolean',
+      title: 'External?',
+      initialValue: 'false'
     }
   ]
 }

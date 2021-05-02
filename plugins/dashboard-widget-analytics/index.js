@@ -6,7 +6,7 @@ import styles from './Analytics.css'
 const sites = [
   {
     name: 'ArtKillingApathy',
-    url: '#'
+    url: 'https://threesam-umami.herokuapp.com/share/cOF6et91/aka'
   },
   {
     name: 'HardRoadOfHope',
@@ -21,8 +21,8 @@ const Analytics = () => {
         <h1 className={styles.title}>Analytics</h1>
       </header>
       <section className={styles.content}>
-        <p>{sites[0].name} (<a href={sites[0].url} target="_blank" rel="noopener noreferrer">...coming soon</a>)</p>
-        <p>{sites[1].name} (<a href={sites[1].url} target="_blank" rel="noopener noreferrer">view</a>)</p>
+        <a className={styles.button} href={sites[0].url} target="_blank" rel="noopener noreferrer">{sites[0].name}</a>
+        <a className={styles.button} href={sites[1].url} target="_blank" rel="noopener noreferrer">{sites[1].name}</a>
       </section>
     </div>
   )

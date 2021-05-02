@@ -39,3 +39,43 @@
   display: block;
   width: 100%;
 }
+
+.button {
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease-out;
+  border: 0.125rem solid #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--bg-col);
+  background: linear-gradient(135deg, var(--bg-col) 0%, var(--bg-col2) 86%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.69s ease-out;
+}
+.button:nth-child(1)::before {
+  --bg-col: #f36666;
+  --bg-col2: #f03d79; 
+}
+.button:nth-child(2)::before {
+  --bg-col: #f5ae29;
+  --bg-col2: #b7da1d; 
+}
+.button:hover:before {
+  opacity: 1;
+}
